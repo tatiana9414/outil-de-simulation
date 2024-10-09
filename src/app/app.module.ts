@@ -16,6 +16,7 @@ import {AppComponent} from './app.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertiaire.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
         LoginComponent,
         AppComponent,
         HeaderComponent,
-        FooterComponent
+        FooterComponent,
+        ScenarioTertiaireComponent
   ],
   imports: [
     BrowserModule,

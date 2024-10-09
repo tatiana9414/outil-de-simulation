@@ -6,10 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-position: relative;
+
     padding: 15px;
     box-sizing: border-box;
-    flex-wrap: wrap;
+    
    
 
   }
@@ -22,11 +22,12 @@ position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left:auto;
   }
 
   .navbar li {
     height: auto;
-    
+    position: relative;
     width: auto;
     float: left;
     text-align: center;
@@ -124,12 +125,14 @@ a:hover {
   .user-section {
     display: flex;
     align-items: center;
+    margin-left: auto;
   }
   
   .user-name {
     font-size: 16px;
     color: rgb(241, 240, 240);
     margin-right: 10px;
+    font: normal bold 13px/1em Arial, Verdana, Helvetica;
     text-align: right;
    
   }

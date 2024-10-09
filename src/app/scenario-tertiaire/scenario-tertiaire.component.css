@@ -1,0 +1,41 @@
+h1{
+    font-size: 30px;
+    margin: 20px 0;
+
+}
+
+.form-group{
+ 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+   
+}
+
+select{
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 500px;
+
+}
+
+
+button.validate-button{
+
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.validate-button:hover{
+    background-color: #0056b3;
+}
+

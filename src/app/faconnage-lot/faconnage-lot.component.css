@@ -1,0 +1,63 @@
+h1{
+    font-size: 30px;
+    margin: 20px 0;
+
+}
+
+
+.simulations-table {
+    width: 95%;
+    margin:0;
+    border-collapse: collapse;
+    margin-left: 4rem;
+    
+  }
+  
+  .simulations-table th, .simulations-table td {
+    border: 2px solid #fdfdfd;
+    padding: 8px;
+  }
+  
+  .simulations-table th:nth-child(-n+15){
+    background-color: #024272;
+    color: white;
+  }
+
+  .simulations-table th:nth-child(n+16){
+    background-color: orange;
+    color: white;
+    width: 100rem;
+  }
+  
+  .simulations-table td {
+    text-align: center;
+  }
+  
+  .simulations-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .simulations-table button {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .simulations-table tbody tr  td:nth-child(n+1):nth-child(-n+15)
+  {
+    background-color: #d5deec;
+    column-width: auto;
+  }
+  
+  .simulations-table tbody tr td:nth-child(n+15):nth-child(-n+16)
+  {
+    background-color: #f2f2f2;
+    column-width: auto;
+  }
+
+  .page {
+    display: flex;
+    background-color: transparent;
+    border: none;
+    width: 95%;
+  }

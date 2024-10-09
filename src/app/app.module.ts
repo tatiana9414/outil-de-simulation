@@ -17,6 +17,8 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertiaire.component';
+import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertia
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        ScenarioTertiaireComponent
+        ScenarioTertiaireComponent,
+        FaconnageLotComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +42,8 @@ import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertia
     AppRoutingModule,
     MatCardModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    FormsModule
 
   ],
   providers: [],

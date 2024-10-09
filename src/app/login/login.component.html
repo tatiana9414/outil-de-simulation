@@ -1,0 +1,23 @@
+<div class="header">
+<div class="logo-section">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <span class="title">Outil de<br>Simulation</span>
+  </div>
+</div>
+<div class="login-container">
+
+
+<form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+    <div>
+        <h2>Connexion</h2>
+        <label for="username">Nom d'utilisateur : </label>
+        <input id="username" type="text" formControlName="username" required />
+    </div>
+
+<div>
+    <label for="password">Mot de passe : </label>
+    <input id="password" type="password" formControlName="password" required/>
+</div>
+<button type="submit" >Se connecter </button>
+</form>
+</div>

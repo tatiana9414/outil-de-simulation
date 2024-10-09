@@ -1,0 +1,15 @@
+.navbar {
+    height: 4rem;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+  
+    background-color: orange;
+    align-items: center;
+  }
+
+ 

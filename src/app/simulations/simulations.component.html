@@ -1,0 +1,120 @@
+
+<div class="container">
+
+  <app-header></app-header>
+
+
+  <div class="Page">
+    <!-- Sous-titre -->
+    <h2 class="subtitle" >Les simulations d'Amandine</h2>
+  
+    <!-- Boutons d'action -->
+   
+ <div class="headerbas">
+    <div class="inline-block1">
+
+      
+      <button><img src="assets/Share.png" class="img-btn">Partager </button>
+      <button><img src="assets/Export.png" class="img-btn">Exporter</button>
+      <button> <mat-icon class="btn-supp">clear</mat-icon> Supprimer</button>
+    </div>
+ 
+    <!-- Filtres -->
+      <div class="inline-block2">
+        <thead><h3 class="Filtres">Filtres Pratiques</h3></thead>
+       <div class="filter-container">
+        <button class="btn-filtre" >Période <br>en cours</button>
+        <button class="btn-filtre">Scénarios <br> validés</button>
+        <button class="btn-filtre">Brouillons</button>
+        <button class="btn-filtre">Partagéés <br> avec moi </button>
+        <button class="btn-filtre">Scénario <br> à valider</button>
+        
+      <input type="text" placeholder="Barre de recherche par mot clé" class="search">
+    <button class="btn-search"><mat-icon >search </mat-icon></button>
+  </div>
+
+      </div>
+    </div>
+
+    <!-- Tableau -->
+    <table class="simulations-table">
+      <thead>
+        <tr>
+          <th>Sélection</th>
+          <th>Scénario</th>
+          <th>Période <br> simulée</th>
+          <th>Type</th>
+          <th>Périmètre</th>
+          <th>Auteur</th>
+          <th>Contributeurs</th>
+          <th>Dernière <br>modif.</th>
+          <th>Rdtm <br>simulé <br> (5ème année)</th>
+          <th>Statut</th>
+          <th>Commentaire</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>CT_Amsterdam</td>
+          <td>2023-2027</td>
+          <td>Com. Tertiaire</td>
+          <td>Amsterdam</td>
+          <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
+          <td><img src="assets/contributor1.png" alt="Contributeur" class="contributor-img"></td>
+          <td>Hier 18:10</td>
+          <td>2.56%</td>
+          <td>Pré-validé</td>
+          <td>Commentaire libre</td>
+          <td>
+            <button><img src="assets/Edit.png" class="mat-icon"></button>
+            <button><img src="assets/Look.png" class="mat-icon"></button>
+            <button><img src="assets/Share.png" class="mat-icon"></button>
+         
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>CT_Amsterdam</td>
+          <td>2023-2027</td>
+          <td>Com. Tertiaire</td>
+          <td>Amsterdam</td>
+          <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
+          <td></td>
+          <td>24/06/2024 16:30</td>
+          <td>2.60%</td>
+          <td>Brouillon</td>
+          <td>Commentaire libre</td>
+          <td>
+            <button><img src="assets/Edit.png" class="mat-icon"></button>
+            <button><img src="assets/Look.png" class="mat-icon"></button>
+            <button><img src="assets/Share.png" class="mat-icon"></button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>P_Planete</td>
+          <td>2023-2027</td>
+          <td>Patrimoine</td>
+          <td>Planete A </td>
+          <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
+          <td></td>
+          <td>05/06/2024 10:22</td>
+          <td>4,55%</td>
+          <td>Brouillon</td>
+          <td>Commentaire libre</td>
+          <td>
+            <button><img src="assets/Edit.png" class="mat-icon"></button>
+            <button><img src="assets/Look.png" class="mat-icon"></button>
+            <button><img src="assets/Share.png" class="mat-icon"></button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <app-footer></app-footer>
+</div>
+  

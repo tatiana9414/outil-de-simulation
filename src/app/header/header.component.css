@@ -1,0 +1,143 @@
+#wrap {
+    width: 100%;
+     max-width: 100vw;
+    background-color: orange;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+position: relative;
+    padding: 15px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+   
+
+  }
+
+  .navbar {
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .navbar li {
+    height: auto;
+    
+    width: auto;
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 13px/1em Arial, Verdana, Helvetica;
+    padding: 10px;
+    margin: 0;
+    background-color: orange;
+    box-sizing: border-box;
+  }
+
+  .dropdown {
+    height: auto;
+    
+    
+    float: left;
+    text-align: center;
+    list-style: none;
+    font: normal bold 13px/1em Arial, Verdana, Helvetica;
+    padding: 0;
+    margin: 0;
+    background-color: orange;
+ 
+  
+    display: none;
+   top:100%;
+   right: 0;
+
+    position: absolute;
+
+  }
+
+  .navbar a {
+    padding: 10px 15px ;
+    border-left: 1px solid #ccc9c9;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+
+
+.navbar li:hover .dropdown{
+  display: block;
+}
+
+  .navbar li:hover,
+a:hover {
+    background-color: orange;
+}
+
+.navbar li ul {
+    display: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar li:hover ul {
+    display: block;
+  }
+
+  .navbar li ul li {
+    background-color: orange;
+  }
+
+  .navbar li ul li a {
+    border-left: 1px solid #444444;
+    border-right: 1px solid #444444;
+    border-top: 1px solid #c9d4d8;
+    border-bottom: 1px solid #444444;
+  }
+
+  .navbar li ul li a:hover {
+    background-color: #90511d;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-weight: bold;
+    font: normal bold 20px/1em Arial, Verdana, Helvetica;
+    color: white;
+    line-height: 1.2;
+    margin-left: 10px;
+  }
+  
+  .user-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-name {
+    font-size: 16px;
+    color: rgb(241, 240, 240);
+    margin-right: 10px;
+    text-align: right;
+   
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+ 

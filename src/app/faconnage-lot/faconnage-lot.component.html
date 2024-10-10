@@ -3,7 +3,7 @@
 <h1> Façonnage des lots</h1>
 
 <div class="page">
-<table class="simulations-table">
+  <table class="simulations-table">
     <thead>
       <tr>
         <th>Locataire</th>
@@ -22,36 +22,50 @@
         <th>Loyer actuel parking (€/u)</th>
         <th>Loyer Global (€) </th>
         <th>Stratégié Appliqué </th>
+        <th>Actions</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let item of data">
-        <td>{{item.locataire}}</td>
-        <td>{{item.numero_bail}}</td>
-        <td>{{item.nb_lots}}</td>
-        <td>{{item.num_lot}}</td>
-        <td>{{item.type_lot}}</td>
-        <td>{{item.etage}}</td>
-        <td>{{item.surface}}</td>
-        <td>{{item.nb_parking}}</td>
-        <td>{{item.date_debut}}</td>
-        <td>{{item.date_fin}}</td>
-        <td>{{item.date_break}}</td>
-        <td> {{item.date_dispo}}</td>
-        <td>{{item.loyer_actuel}}</td>
-        <td>{{item.loyer_parkin}}</td>
-        <td>{{item.loyer_global}}</td>
+      <ng-container *ngFor="let item of data">
+        <tr>
           <td>
-        <select [(ngModel)]="item.strategie">
-          <option *ngFor="let strategie of strategies" [value]="strategie">{{ strategie }}</option>
-        </select>
-      </td>
-    
-      </tr>
-    
-
+            <span  class="sousLocataire" *ngIf="item.nb_lots >1" (click)="toggleSousLignes(item)" >
+            {{item.showDetails ? '-':'+'}}
+            </span> {{item.locataire}}</td> 
+          <td>{{item.numero_bail}}</td>
+          <td>{{item.nb_lots}}</td>
+          <td>{{item.num_lot}}</td>
+          <td>{{item.type_lot}}</td>
+          <td>{{item.etage}}</td>
+          <td>{{item.surface}}</td>
+          <td>{{item.nb_parking}}</td>
+          <td>{{item.date_debut}}</td>
+          <td>{{item.date_fin}}</td>
+          <td>{{item.date_break}}</td>
+          <td>{{item.date_dispo}}</td>
+          <td>{{item.loyer_actuel}}</td>
+          <td>{{item.loyer_parkin}}</td>
+          <td>{{item.loyer_global}}</td>
+          <td>
+            <select [(ngModel)]="item.strategie">
+              <option *ngFor="let strategie of strategies" [value]="strategie">{{ strategie }}</option>
+            </select>
+          </td>
+         
+        </tr>
+      <ng-container *ngIf="item.showDetails" class="locataire-row">
+        <tr  *ngFor="let subItem of item.subData">
+          <td>{{subItem.sousLocataire}}</td>
+          <td>{{subItem.sousNumeroBail}}</td>
+          <td>{{subItem.sousNumLot}}</td>
+          <td>{{subItem.sousTypeLot}}</td>
+          <td>{{subItem.sousSurface}}</td>
+          <td colspan="11"></td>
+        </tr>
+      </ng-container>
+      </ng-container>
     </tbody>
   </table>
-
 </div>
+
 <app-footer></app-footer>

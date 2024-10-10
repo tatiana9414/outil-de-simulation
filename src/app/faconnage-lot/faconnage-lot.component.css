@@ -55,9 +55,14 @@ h1{
     column-width: auto;
   }
 
+ 
   .page {
     display: flex;
     background-color: transparent;
     border: none;
     width: 95%;
+  }
+
+  .sousLocataire  {
+    cursor: pointer ;
   }

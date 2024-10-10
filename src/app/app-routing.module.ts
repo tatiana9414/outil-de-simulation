@@ -4,11 +4,13 @@ import { LoginComponent } from './login/login.component';
 import { SimulationsComponents } from './simulations/simulations.component';
 import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertiaire.component';
 import { ValidationHypothesesCalculComponent } from './validation-hypotheses-calcul/validation-hypotheses-calcul.component';
+import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'simulation', component: SimulationsComponents },
   { path: 'CreerSTertiare', component: ScenarioTertiaireComponent },
+  {path:'FaconnerLot',component:FaconnageLotComponent},
   { path: 'validation-hypotheses-calcul', component: ValidationHypothesesCalculComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }

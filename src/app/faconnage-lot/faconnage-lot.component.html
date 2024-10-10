@@ -1,0 +1,57 @@
+<app-header></app-header>
+<h1> Stratégie Commerciale Tertiaire </h1>
+<h1> Façonnage des lots</h1>
+
+<div class="page">
+<table class="simulations-table">
+    <thead>
+      <tr>
+        <th>Locataire</th>
+        <th>N° de bail</th>
+        <th>Nb Lots</th>
+        <th>N° Lot</th>
+        <th>Type de Lot</th>
+        <th>Etage</th>
+        <th>Surface Louable (m2)</th>
+        <th>Nb Parking</th>
+        <th>Date début du bail</th>
+        <th>Date fin du bail</th>
+        <th>Date de break</th>
+        <th>Date de disponibilité</th>
+        <th>Loyer actuel (€/m2)</th>
+        <th>Loyer actuel parking (€/u)</th>
+        <th>Loyer Global (€) </th>
+        <th>Stratégié Appliqué </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{item.locataire}}</td>
+        <td>{{item.numero_bail}}</td>
+        <td>{{item.nb_lots}}</td>
+        <td>{{item.num_lot}}</td>
+        <td>{{item.type_lot}}</td>
+        <td>{{item.etage}}</td>
+        <td>{{item.surface}}</td>
+        <td>{{item.nb_parking}}</td>
+        <td>{{item.date_debut}}</td>
+        <td>{{item.date_fin}}</td>
+        <td>{{item.date_break}}</td>
+        <td> {{item.date_dispo}}</td>
+        <td>{{item.loyer_actuel}}</td>
+        <td>{{item.loyer_parkin}}</td>
+        <td>{{item.loyer_global}}</td>
+          <td>
+        <select [(ngModel)]="item.strategie">
+          <option *ngFor="let strategie of strategies" [value]="strategie">{{ strategie }}</option>
+        </select>
+      </td>
+    
+      </tr>
+    
+
+    </tbody>
+  </table>
+
+</div>
+<app-footer></app-footer>

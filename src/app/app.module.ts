@@ -17,8 +17,11 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertiaire.component';
+import { ValidationHypothesesCalculComponent } from './validation-hypotheses-calcul/validation-hypotheses-calcul.component';
+import { BuildingInfoComponent } from './building-info/building-info.component';
 import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
 import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { FormsModule } from '@angular/forms';
         HeaderComponent,
         FooterComponent,
         ScenarioTertiaireComponent,
+        ValidationHypothesesCalculComponent,
+        BuildingInfoComponent
         FaconnageLotComponent
+
   ],
   imports: [
     BrowserModule,

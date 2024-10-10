@@ -17,6 +17,8 @@ import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertiaire.component';
+import { ValidationHypothesesCalculComponent } from './validation-hypotheses-calcul/validation-hypotheses-calcul.component';
+import { BuildingInfoComponent } from './building-info/building-info.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertia
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        ScenarioTertiaireComponent
+        ScenarioTertiaireComponent,
+        ValidationHypothesesCalculComponent,
+        BuildingInfoComponent
   ],
   imports: [
     BrowserModule,

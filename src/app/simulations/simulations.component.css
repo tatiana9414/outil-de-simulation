@@ -1,61 +1,5 @@
 
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: orange;
-  padding: 10px;
-  width: 100%;
-}
-
-
-.icon{
-  background-color: transparent;
-  border: none;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-
-.logo-section {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 60px;
-  height: 50px;
-  margin-right: 10px;
-}
-
-.title {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  line-height: 1.2;
-  margin-left: 10px;
-}
-
-.user-section {
-  display: flex;
-  align-items: center;
-}
-
-.user-name {
-  font-size: 16px;
-  color: rgb(10, 10, 10);
-  margin-right: 10px;
-  text-align: right;
- 
-}
-
-.user-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
 .subtitle {
   font-size: 30px;
   margin: 20px 0;
@@ -80,7 +24,8 @@
 
 
 .simulations-table {
-  width: 95%;
+  margin-left: 0rem;
+  margin-right: 3rem;
   border-collapse: collapse;
   
 }
@@ -133,7 +78,7 @@
   display: flex;
   background-color: transparent;
   border: none;
-  width: 95%;
+  width: 95rem;
 }
 
 .inline-block2 button {
@@ -147,7 +92,7 @@
 .inline-block1 {
   display: flex;
   flex-direction: column;
-  width:7%;
+  width:7rem;
  
   margin-right: 10px;
   background-color: #f2f2f2;
@@ -158,7 +103,7 @@
   
   align-items: center;
   background-color: #f2f2f2;
-  width:95%;
+
   margin-bottom: 15px;
  
 }
@@ -167,7 +112,7 @@
 .inline-block2.td{
  
   background-color: #f2f2f2;
-  width:95%;
+
   margin-bottom: 15px;
   display: flex;
   flex-wrap: wrap;
@@ -206,7 +151,7 @@
 
 
 .Page {
-  margin-left: 5%;
+  margin-left: 5rem
 
 }
 .btn-supp {

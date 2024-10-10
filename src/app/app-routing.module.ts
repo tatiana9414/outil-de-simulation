@@ -5,6 +5,7 @@ import { SimulationsComponents } from './simulations/simulations.component';
 import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertiaire.component';
 import { ValidationHypothesesCalculComponent } from './validation-hypotheses-calcul/validation-hypotheses-calcul.component';
 import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
+import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/regroupement-lot-tertiaire.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -12,6 +13,8 @@ const routes: Routes = [
   { path: 'CreerSTertiare', component: ScenarioTertiaireComponent },
   {path:'FaconnerLot',component:FaconnageLotComponent},
   { path: 'validation-hypotheses-calcul', component: ValidationHypothesesCalculComponent },
+  {path:'regroupement-lot-tertiaire', component:RegroupementLotTertiaireComponent},
+  
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }
 ];

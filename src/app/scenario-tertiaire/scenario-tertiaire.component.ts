@@ -14,4 +14,5 @@ export class ScenarioTertiaireComponent {
     this.router.navigate(['/FaconnerLot'])
   }
 
+
 }

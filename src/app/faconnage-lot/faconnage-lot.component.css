@@ -1,13 +1,18 @@
-h1{
-    font-size: 30px;
-    margin: 20px 0;
-
+/*  title */
+.path-directory{
+  font-size: 0.8rem;
 }
 
+.highlight {
+  font-size: 2rem;
+}
+
+/* Tableau */
 
 .simulations-table {
-    width: 95%;
+    
     margin:0;
+    margin-right: 3rem;
     border-collapse: collapse;
     margin-left: 4rem;
     
@@ -16,6 +21,7 @@ h1{
   .simulations-table th, .simulations-table td {
     border: 2px solid #fdfdfd;
     padding: 8px;
+    font-size: 14px;
   }
   
   .simulations-table th:nth-child(-n+15){
@@ -26,43 +32,137 @@ h1{
   .simulations-table th:nth-child(n+16){
     background-color: orange;
     color: white;
-    width: 100rem;
+    width: auto;
   }
   
   .simulations-table td {
     text-align: center;
+    font-size: 10px;
+    
   }
   
-  .simulations-table input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .simulations-table button {
-    margin-right: 5px;
-    cursor: pointer;
-  }
-  
-  .simulations-table tbody tr  td:nth-child(n+1):nth-child(-n+15)
+  .ligne 
   {
     background-color: #d5deec;
     column-width: auto;
   }
   
-  .simulations-table tbody tr td:nth-child(n+15):nth-child(-n+16)
-  {
-    background-color: #f2f2f2;
-    column-width: auto;
+  .color-back  {
+    background-color:#f2f2f2;
+  }
+  
+ /* Modificationt des lots et vers l'etape suivante */ 
+.board-management {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inline-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+ .hypothesis-input, .next-step {
+  border-radius: 1rem;
+  background-color: rgb(245, 245, 245);
+  padding: 0;
+  text-align: center;
+  height: 9rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  
+  
+}
+
+.hypothesis-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+
+  width: 30rem;
+}
+
+.next-step{
+  width:15rem;
+}
+
+
+
+.button-with-checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1rem;
+  
+}
+
+.button-with-checkbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5rem;
+
+}
+
+.btn-filtre-base {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+
+}
+
+.btn-filtre-base {
+  background-color: white;
+  border-radius: 10px;
+  display: inline-block;
+  text-align: center;
+  
+  cursor: pointer;
+  border: none;
+
+}
+
+.btn-filtre {
+  height: 3rem;
+  width: 10rem;
+  margin-top: 1.55rem;
+}
+.btn-filtre:hover {
+background-color: lightgray;
+}
+
+.btn-filtre-checkbox:hover {
+  background-color: lightgray;
   }
 
- 
-  .page {
-    display: flex;
-    background-color: transparent;
-    border: none;
-    width: 95%;
-  }
+.btn-filtre-checkbox {
+  height: 3rem; 
+  width: 9rem;
+}
+  
+  
 
-  .sousLocataire  {
-    cursor: pointer ;
-  }
+
+  
+  
+  
+  
+
+
+
+
+
+  

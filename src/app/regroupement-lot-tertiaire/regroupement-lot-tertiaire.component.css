@@ -1,0 +1,114 @@
+/*  title */
+
+  .highlight {
+    font-size: 2rem;
+    margin-left: 4rem;
+  }
+  
+  /* Tableau */
+  
+  .simulations-table {
+      
+      margin:0;
+      margin-right: 3rem;
+      border-collapse: collapse;
+      margin-left: 4rem;
+      
+    }
+    
+    .simulations-table th, .simulations-table td {
+      border: 2px solid #fdfdfd;
+      padding: 8px;
+      font-size: 14px;
+    }
+    
+    .simulations-table th:nth-child(-n+15){
+      background-color: #024272;
+      color: white;
+    }
+  
+    .simulations-table th:nth-child(n+16){
+      background-color: orange;
+      color: white;
+      width: auto;
+    }
+    
+    .simulations-table td {
+      text-align: center;
+      font-size: 10px;
+      
+    }
+    
+    .ligne 
+    {
+      background-color: #d5deec;
+      
+    }
+    
+    .color-back  {
+      background-color:#f2f2f2;
+    }
+
+    .checkbox2:checked {
+      accent-color: green;
+    }
+    
+   /* Modificationt des lots et vers l'etape suivante */ 
+  .board-management {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+   
+  }
+  
+ 
+ 
+
+  
+  
+
+  
+  
+  .btn-filtre-base {
+    background-color: rgb(245, 242, 242);
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    
+    cursor: pointer;
+    border: none;
+    margin-right: 4rem;
+  
+  }
+  
+  .btn-filtre {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 1.55rem;
+  }
+  .btn-filtre:hover {
+  background-color: lightgray;
+  }
+  
+  .btn-filtre-checkbox:hover {
+    background-color: lightgray;
+    }
+  
+  .btn-filtre-checkbox {
+    height: 3rem; 
+    width: 9rem;
+  }
+    
+    
+  
+  
+    
+    
+    
+    
+  
+  
+  
+  
+  
+    

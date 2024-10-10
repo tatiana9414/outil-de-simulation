@@ -21,6 +21,7 @@ import { ValidationHypothesesCalculComponent } from './validation-hypotheses-cal
 import { BuildingInfoComponent } from './building-info/building-info.component';
 import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
 import { FormsModule } from '@angular/forms';
+import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/regroupement-lot-tertiaire.component';
 
 
 @NgModule({
@@ -33,8 +34,10 @@ import { FormsModule } from '@angular/forms';
         FooterComponent,
         ScenarioTertiaireComponent,
         ValidationHypothesesCalculComponent,
-        BuildingInfoComponent
-        FaconnageLotComponent
+        BuildingInfoComponent,
+        FaconnageLotComponent,
+      
+        RegroupementLotTertiaireComponent
 
   ],
   imports: [

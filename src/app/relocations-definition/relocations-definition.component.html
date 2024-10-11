@@ -1,0 +1,75 @@
+<body>
+    <div class="container">
+      <app-header></app-header>
+  
+      <div class="Page">
+        <!-- Sous-titre -->
+        <h2 class="path-directory">{{ pathsDirectory }}<span class="highlight">{{ actualDirectory }}</span></h2>
+  
+        <!-- Boutons d'action -->
+        <div class="board-management">
+          <div class="inline-block">
+            <div class="filter-container">
+              <!-- Suppression des anciens boutons -->
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button class="btn-filtre btn-filtre-base" >Annuler la saisie</button>
+            <button class="btn-filtre btn-filtre-base" >Retour à l'étape 1</button>
+            <button class="btn-filtre btn-filtre-base" >Valider la saisie des relocations</button>
+          </div>
+        </div>
+  
+        <table class="relocation-table">
+          <thead>
+            <tr>
+              <th>Futur Locataire</th>
+              <th>Nb lots</th>
+              <th>Surface louable (m²)</th>
+              <th>Loyer futur moyen (€/m²)</th>
+              <th>Nb pkg affecté</th>
+              <th>Loyer parking moyen (€/u)</th>
+              <th>Loyer futur (€ avec parking)</th>
+              <th class="highlight-orange">Marketing & com. (Charges NR, €)</th>
+              <th class="highlight-orange">Honoraires brokers (Charges NR, €)</th>
+              <th class="highlight-orange">Honoraires brokers (% du loyer)</th>
+              <th class="highlight-orange">Autres coûts (Charges NR, €)</th>
+              <th class="highlight-orange">Date d'effet du nouveau bail</th>
+              <th class="highlight-orange">Durée Ferme (année)</th>
+              <th class="highlight-orange">Durée du bail (année)</th>
+              <th class="highlight-orange">Franchise (mois)</th>
+              <th class="highlight-orange">Participation aux travaux preneur (Immobilisations, €)</th>
+              <th class="highlight-orange">Participation aux travaux preneur (Charges NR, €)</th>
+              <th class="highlight-grey">Taux d'accompagnement (% du loyer ferme)</th>
+              <th class="highlight-grey">Loyer économique (€/m²)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of relocationDefinitionData">
+              <td>{{item.futur_locataire}}</td>
+              <td>{{item.nb_lots}}</td>
+              <td>{{item.surface_louable}}</td>
+              <td>{{item.loyer_futur_moyen}}</td>
+              <td>{{item.nb_pkg_affecte}}</td>
+              <td>{{item.loyer_parking_moyen}}</td>
+              <td>{{item.loyer_futur_avec_parking}}</td>
+              <td>{{item.marketing_com}}</td>
+              <td>{{item.honoraires_brokers_charges}}</td>
+              <td>{{item.honoraires_brokers_pourcentage}}</td>
+              <td>{{item.autres_couts}}</td>
+              <td>{{item.date_effet_nouveau_bail}}</td>
+              <td>{{item.duree_ferme}}</td>
+              <td>{{item.duree_bail}}</td>
+              <td>{{item.franchise}}</td>
+              <td>{{item.participation_travaux_immobilisations}}</td>
+              <td>{{item.participation_travaux_charges}}</td>
+              <td>{{item.taux_accompagnement}}</td>
+              <td>{{item.loyer_economique}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+  

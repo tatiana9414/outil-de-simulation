@@ -8,6 +8,7 @@ import { RelocationsAffectationComponent } from './relocations-affectation/reloc
 import { RelocationsDefinitionComponent } from './relocations-definition/relocations-definition.component';
 import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
 import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/regroupement-lot-tertiaire.component';
+import { ScinderLotTertiareComponent } from './scinder-lot-tertiare/scinder-lot-tertiare.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,8 @@ const routes: Routes = [
   {path:'regroupement-lot-tertiaire', component:RegroupementLotTertiaireComponent},
   { path: 'relocations-affectation', component: RelocationsAffectationComponent },
   { path: 'relocations-definition', component: RelocationsDefinitionComponent },
+  {path:'scinder-lot-tertiaire',component:ScinderLotTertiareComponent},
+  
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }
 ];

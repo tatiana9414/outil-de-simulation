@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
- 
+
 @Component({
-  selector: 'app-faconnage-lot',
-  templateUrl: './faconnage-lot.component.html',
-  styleUrls: ['./faconnage-lot.component.css']
+  selector: 'app-scinder-lot-tertiare',
+  templateUrl: './scinder-lot-tertiare.component.html',
+  styleUrl: './scinder-lot-tertiare.component.css'
 })
-export class FaconnageLotComponent {
+export class ScinderLotTertiareComponent {
+
+
   constructor(private router: Router) {}
   strategies = ['Maintien dans les lieux', 'Relocation en état'];
   data = [
@@ -26,8 +28,7 @@ export class FaconnageLotComponent {
       loyer_actuel: 430,
       loyer_parkin: 1250,
       loyer_global: 568750,
-      strategie: 'Maintien dans les lieux',
-      showDetails: false,
+      showDetails: true,
       subData: [
         {
           sousLocataire: 'Flammarion',
@@ -44,8 +45,8 @@ export class FaconnageLotComponent {
           sousdate_dispo: '-',
           sousloyer_actuel: 450,
           sousloyer_parkinh: '-',
-          sousloyer_global: 225000,
-          strategie: 'Maintien dans les lieux',
+          sousloyer_global: 225000
+          
         },
         {
           sousLocataire: 'Flammarion',
@@ -62,8 +63,7 @@ export class FaconnageLotComponent {
           sousdate_dispo: '-',
           sousloyer_actuel: 450,
           sousloyer_parkinh: '-',
-          sousloyer_global: 180000,
-          strategie: 'Maintien dans les lieux',
+          sousloyer_global: 180000
         },
         {
           sousLocataire: 'Flammarion',
@@ -80,8 +80,7 @@ export class FaconnageLotComponent {
           sousdate_dispo: '-',
           sousloyer_actuel: 450,
           sousloyer_parkinh: '-',
-          sousloyer_global: 112500,
-          strategie: 'Maintien dans les lieux',
+          sousloyer_global: 112500
         }
       ]
     },
@@ -101,8 +100,7 @@ export class FaconnageLotComponent {
       loyer_actuel: 250,
       loyer_parkin: 60,
       loyer_global: 3750,
-      strategie: 'Maintien dans les lieux',
-      showDetails: false,
+      showDetails: true,
 
     }
   ];
@@ -113,20 +111,9 @@ export class FaconnageLotComponent {
     item.showDetails=!item.showDetails;
   }
 
-
-  pathsDirectory: string = 'Stratégie Commerciale Tertiaire > ​ ';
-  actualDirectory: string = 'Façonnage des lots ';
-  GoToHypothese(){
-
-    this.router.navigate(['/validation-hypotheses-calcul'])
+  OnPageInit(){
+    this.router.navigate(['/FaconnerLot'])
   }
-
-  GoToTableau(){
-    this.router.navigate(['/regroupement-lot-tertiaire'])
-  }
-
-  GoToScinder(){
-    this.router.navigate(['/scinder-lot-tertiaire'])
-  }
+ 
 
 }

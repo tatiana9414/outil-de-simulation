@@ -23,11 +23,14 @@ import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
 import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/regroupement-lot-tertiaire.component';
 import { RelocationsAffectationComponent } from './relocations-affectation/relocations-affectation.component';
 import { RelocationsDefinitionComponent } from './relocations-definition/relocations-definition.component';
+import { ScinderLotTertiareComponent } from './scinder-lot-tertiare/scinder-lot-tertiare.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SimulationsComponents,
+    
     LoginComponent,
     HeaderComponent,
     FooterComponent,
@@ -37,7 +40,9 @@ import { RelocationsDefinitionComponent } from './relocations-definition/relocat
     FaconnageLotComponent,
     RegroupementLotTertiaireComponent,
     RelocationsAffectationComponent,
-    RelocationsDefinitionComponent
+    RelocationsDefinitionComponent,
+    ScinderLotTertiareComponent
+
   ],
   imports: [
     BrowserModule,
@@ -55,7 +60,7 @@ import { RelocationsDefinitionComponent } from './relocations-definition/relocat
     HttpClientModule
   ],
   providers: [],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA], // Ajoutez cette ligne
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

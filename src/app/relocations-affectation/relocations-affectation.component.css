@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Page {
+    flex: 1;
+  }
+  
+  
+  
+  /* --------------- BOARD MANAGEMENT --------------- */
+  
+  .path-directory {
+    font-size: 0.8rem;
+  }
+  
+  .highlight {
+    font-size: 2rem;
+  }
+  
+  .board-management {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .inline-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .action-buttons .btn-filtre {
+    height: 3rem;
+    width: auto;
+    padding: 0 1rem;
+  }
+  
+  /* -------------------------------------- */
+  
+  /* --------------- TABLEAU --------------- */
+  
+  h1 {
+    font-size: 30px;
+    margin: 20px 0;
+  }
+  
+  .relocation-table {
+    width: 95%;
+    margin: 0 auto; /* Centrer le tableau */
+    border-collapse: collapse;
+  }
+  
+  .relocation-table th, .relocation-table td {
+    padding: 0.5rem; /* Réduire la taille des marges */
+    font-size: 0.85rem; /* Réduire la taille de la police */
+  }
+  
+  
+  .relocation-table th {
+    background-color: #024272;
+    color: white;
+  }
+  
+  .relocation-table td {
+    text-align: center;
+  }
+  
+  .relocation-table input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .relocation-table button {
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .relocation-table td {
+    text-align: center;
+    background-color: #d5deec;
+    column-width: auto;
+  }
+  
+  
+  /* Classe pour surligner en orange */
+  .relocation-table .highlight-orange {
+    background-color: orange;
+    color: white;
+  }
+  
+  .relocation-table .highlight-grey {
+    background-color: grey;
+    color: white;
+  }

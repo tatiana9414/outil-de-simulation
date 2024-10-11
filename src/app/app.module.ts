@@ -1,18 +1,18 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatTableModule } from '@angular/material/table';
-import {MatToolbarModule } from '@angular/material/toolbar';
-import {MatCheckboxModule } from '@angular/material/checkbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatTableModule } from '@angular/material/table';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { SimulationsComponents } from './simulations/simulations.component';
 import { MatCardModule } from '@angular/material/card';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
-import { ReactiveFormsModule } from '@angular/forms';
-import {AppComponent} from './app.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,25 +20,24 @@ import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertia
 import { ValidationHypothesesCalculComponent } from './validation-hypotheses-calcul/validation-hypotheses-calcul.component';
 import { BuildingInfoComponent } from './building-info/building-info.component';
 import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
-import { FormsModule } from '@angular/forms';
 import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/regroupement-lot-tertiaire.component';
-
+import { RelocationsAffectationComponent } from './relocations-affectation/relocations-affectation.component';
+import { RelocationsDefinitionComponent } from './relocations-definition/relocations-definition.component';
 
 @NgModule({
   declarations: [
-  
+    AppComponent,
     SimulationsComponents,
-        LoginComponent,
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        ScenarioTertiaireComponent,
-        ValidationHypothesesCalculComponent,
-        BuildingInfoComponent,
-        FaconnageLotComponent,
-      
-        RegroupementLotTertiaireComponent
-
+    LoginComponent,
+    HeaderComponent,
+    FooterComponent,
+    ScenarioTertiaireComponent,
+    ValidationHypothesesCalculComponent,
+    BuildingInfoComponent,
+    FaconnageLotComponent,
+    RegroupementLotTertiaireComponent,
+    RelocationsAffectationComponent,
+    RelocationsDefinitionComponent
   ],
   imports: [
     BrowserModule,
@@ -52,10 +51,11 @@ import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/
     MatCardModule,
     ReactiveFormsModule,
     RouterModule,
-    FormsModule
-
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA], // Ajoutez cette ligne
   bootstrap: [AppComponent]
 })
 export class AppModule { }

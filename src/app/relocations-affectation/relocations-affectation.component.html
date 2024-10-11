@@ -1,0 +1,81 @@
+<body>
+  <div class="container">
+      <app-header></app-header>
+
+      <div class="Page">
+          <!-- Sous-titre -->
+          <h2 class="path-directory">{{ pathsDirectory }}<span class="highlight">{{ actualDirectory }}</span></h2>
+
+          <!-- Boutons d'action -->
+      <div class="board-management">
+        <div class="inline-block">
+          <div class="filter-container">
+            <!-- Suppression des anciens boutons -->
+          </div>
+        </div>
+        <div class="action-buttons">
+          <button class="btn-filtre btn-filtre-base">Annuler la saisie</button>
+          <button class="btn-filtre btn-filtre-base">Etape 2 : définition des contrats</button>
+        </div>
+      </div>
+
+          <table class="relocation-table">
+              <thead>
+                  <tr>
+                      <th>Locataire actuel</th>
+                      <th>Nb lots</th>
+                      <th>N° Lot</th>
+                      <th>Type de lot</th>
+                      <th>Etage</th>
+                      <th>Surface louable (m²)</th>
+                      <th>Nb pkg</th>
+                      <th>Fin de bail</th>
+                      <th>Date de Break</th>
+                      <th>Disponibilité</th>
+                      <th>Loyer actuel (€/m²)</th>
+                      <th>Loyer actuel pkg (€/u)</th>
+                      <th>Loyer global (€)</th>
+                      <th>Stratégie appliquée</th>
+                      <th class="highlight-orange">Date départ du locataire</th>
+                      <th class="highlight-orange">Indemnités d'éviction (€)</th>
+                      <th class="highlight-orange">Fin des travaux</th>
+                      <th class="highlight-orange">Futur locataire</th>
+                      <th class="highlight-orange">Loyer futur (€/m²)</th>
+                      <th class="highlight-orange">Loyer futur RETAIL (€/m² pond)</th>
+                      <th class="highlight-orange">Nb Pkg affecté</th>
+                      <th class="highlight-orange">Loyer Pkg (€/u)</th>
+                      <th class="highlight-grey">Loyer futur (€ avec parking)</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let item of relocationData">
+                      <td>{{item.locataire}}</td>
+                      <td>{{item.nb_lots}}</td>
+                      <td>{{item.num_lot}}</td>
+                      <td>{{item.type_lot}}</td>
+                      <td>{{item.etage}}</td>
+                      <td>{{item.surface}}</td>
+                      <td>{{item.nb_pkg}}</td>
+                      <td>{{item.fin_bail}}</td>
+                      <td>{{item.date_break}}</td>
+                      <td>{{item.disponibilite}}</td>
+                      <td>{{item.loyer_actuel}}</td>
+                      <td>{{item.loyer_actuel_pkg}}</td>
+                      <td>{{item.loyer_global}}</td>
+                      <td>{{item.strategie_appliquee}}</td>
+                      <td>{{item.date_depart_locataire}}</td>
+                      <td>{{item.indemnites_eviction}}</td>
+                      <td>{{item.fin_travaux}}</td>
+                      <td>{{item.futur_locataire}}</td>
+                      <td>{{item.loyer_futur}}</td>
+                      <td>{{item.loyer_futur_retail}}</td>
+                      <td>{{item.nb_pkg_affecte}}</td>
+                      <td>{{item.loyer_pkg}}</td>
+                      <td>{{item.loyer_futur_avec_parking}}</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+  <app-footer></app-footer>
+</body>

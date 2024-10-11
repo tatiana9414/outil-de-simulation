@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 interface RelocationData {
   locataire: string;
@@ -34,6 +35,12 @@ interface RelocationData {
 export class RelocationsAffectationComponent {
   pathsDirectory: string = 'Stratégie Commerciale Tertiaire > Relocation > Hypothèses de simulation >​ ';
   actualDirectory: string = 'Affectation des lots';
+
+  constructor(private router: Router) {}
+
+  goToDefinitions() {
+    this.router.navigate(['relocations-definition']);
+  }
 
   relocationData: RelocationData[] = Array.from({ length: 3 }, (_, i) => this.generateRandomRelocationData(`Locataire ${String.fromCharCode(65 + i)}`));
 

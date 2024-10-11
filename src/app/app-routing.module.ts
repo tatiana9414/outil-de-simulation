@@ -6,6 +6,7 @@ import { ScenarioTertiaireComponent } from './scenario-tertiaire/scenario-tertia
 import { ValidationHypothesesCalculComponent } from './validation-hypotheses-calcul/validation-hypotheses-calcul.component';
 import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
 import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/regroupement-lot-tertiaire.component';
+import { ScinderLotTertiareComponent } from './scinder-lot-tertiare/scinder-lot-tertiare.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'FaconnerLot',component:FaconnageLotComponent},
   { path: 'validation-hypotheses-calcul', component: ValidationHypothesesCalculComponent },
   {path:'regroupement-lot-tertiaire', component:RegroupementLotTertiaireComponent},
+  {path:'scinder-lot-tertiaire',component:ScinderLotTertiareComponent},
   
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }

@@ -1,33 +1,12 @@
 <app-header> </app-header>
-<h2 class="path-directory">{{ pathsDirectory }}<span class="highlight">{{ actualDirectory }}</span></h2>
+
     
 <!-- Boutons d'action -->
 <div class="board-management">
-<app-building-info> </app-building-info>
-<div class="inline-block">
-<div class="filter-container">
-
-<div class="hypothesis-input">
- <p>Modifications des lots </p>
- <div class="button-with-checkbox-container">
-   <div class="button-with-checkbox">
-     <button  class="btn-filtre-checkbox btn-filtre-base"(click)="GoToTableau()">Regrouper</button>
-   </div>  
-   <div class="button-with-checkbox">
-
-     <button class="btn-filtre-checkbox btn-filtre-base" (click)="GoToScinder()"> Scinder</button>
-   </div>
-   <div class="button-with-checkbox">
-    
-     <button class="btn-filtre-checkbox btn-filtre-base">Réinitialiser</button>
-   </div>  
- </div>
-</div>
-<div class="next-step">
- <p class="btn-label">> Vers l'étape suivante</p>
- <button class="btn-filtre btn-filtre-base" (click)="GoToHypothese()">Synthèse du scénario</button>
-</div>
-</div>
+  <h2 class="highlight">Selectionner les lots à scinder </h2>
+  <div class="container-btn">
+  <button  class="btn-filtre btn-filtre-base">Scinder les lots séléctionnés </button>
+ <button  class="btn-filtre btn-filtre-base"(click)="OnPageInit()">Valider les données des nouveaux lots </button>
 </div>
 </div>
 
@@ -50,7 +29,8 @@
         <th>Loyer actuel (€/m2)</th>
         <th>Loyer actuel parking (€/u)</th>
         <th>Loyer Global (€) </th>
-        <th>Stratégié Appliqué </th>
+        <th>Sélection des lots </th>
+        
         
       </tr>
     </thead>
@@ -66,7 +46,7 @@
           <td>{{item.num_lot}}</td>
           <td>{{item.type_lot}}</td>
           <td>{{item.etage}}</td>
-          <td>{{item.surface}}</td>
+          <td><input type="text" placeholder="..." class="search"></td>
           <td>{{item.nb_parking}}</td>
           <td>{{item.date_debut}}</td>
           <td>{{item.date_fin}}</td>
@@ -75,11 +55,10 @@
           <td>{{item.loyer_actuel}}</td>
           <td>{{item.loyer_parkin}}</td>
           <td>{{item.loyer_global}}</td>
-          <td>
-            <select [(ngModel)]="item.strategie">
-              <option *ngFor="let strategie of strategies" [value]="strategie">{{ strategie }} </option>
-            </select>
-          </td>
+          <td><input type="checkbox" id="checkbox2">
+            <label for="checkbox2"></label></td>
+         
+        
          
         </tr >
       <ng-container *ngIf="item.showDetails" class="locataire-row">
@@ -90,7 +69,7 @@
           <td>{{subItem.sousNumLot}}</td>
           <td>{{subItem.sousTypeLot}}</td>
           <td>{{subItem.sousEtage}}</td>
-          <td>{{subItem.sousSurface}}</td>
+          <td><input type="text" placeholder="..."  class="search"></td>
           <td>{{subItem.sousNbparking}}</td>
           <td>{{subItem.sousdate_debut}}</td>
           <td>{{subItem.sousdate_fin}}</td>
@@ -99,14 +78,12 @@
           <td>{{subItem.sousloyer_actuel}}</td>
           <td>{{subItem.sousloyer_parkinh}}</td>
           <td>{{subItem.sousloyer_global}}</td>
-          <td >
-            <select [(ngModel)]="item.strategie">
-              <option *ngFor="let strategie of strategies" [value]="strategie">{{ strategie }}</option>
-            </select>
-          </td>
+          <td ><input type="checkbox" id="checkbox2">
+            <label for="checkbox2"></label></td>
+       
 
 
-          <td colspan="11"></td>
+          
         </tr>
       </ng-container>
       </ng-container>

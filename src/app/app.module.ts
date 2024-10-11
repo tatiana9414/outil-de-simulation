@@ -22,6 +22,7 @@ import { BuildingInfoComponent } from './building-info/building-info.component';
 import { FaconnageLotComponent } from './faconnage-lot/faconnage-lot.component';
 import { FormsModule } from '@angular/forms';
 import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/regroupement-lot-tertiaire.component';
+import { ScinderLotTertiareComponent } from './scinder-lot-tertiare/scinder-lot-tertiare.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/
         BuildingInfoComponent,
         FaconnageLotComponent,
       
-        RegroupementLotTertiaireComponent
+        RegroupementLotTertiaireComponent,
+                ScinderLotTertiareComponent
 
   ],
   imports: [

@@ -10,6 +10,10 @@
     border-radius: 1rem;
     background-color: rgb(245, 245, 245);
   }
+
+  .synthese-scenario-height {
+    height: 10rem;
+  }
   
    .building-name {
     display: flex;
@@ -42,6 +46,10 @@
   }
   
    .logo-container p {
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom:0.3rem;
   }
   
+  .simulation {
+  font-weight: bold;
+  }

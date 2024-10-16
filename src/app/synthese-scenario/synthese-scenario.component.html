@@ -1,0 +1,157 @@
+<body>
+    <div class="container">
+      <app-header></app-header>
+  
+      <div class="Page">
+        <!-- Sous-titre -->
+        <h2 class="path-directory">{{ pathsDirectory }}<span class="highlight">{{ actualDirectory }}</span></h2>
+  
+        <!-- Boutons d'action -->
+        <div class="board-management">
+          <app-building-info></app-building-info>
+          <div class="inline-block">
+            <div class="filter-container">
+              <div class="previous-step">
+                <p class="btn-label">< Vers l'étape précédente</p>
+                <button class="btn-filtre btn-filtre-base">Hypothèses de simulation</button>
+              </div>
+              <div class="hypothesis-input">
+                
+                <input type="text" placeholder=" Description du scénario" class="description-text">
+                <div class="button-with-checkbox-container">
+                    
+                  <div class="button-with-checkbox">
+                   
+                    <button class="btn-filtre-checkbox btn-filtre-base">Enregistrer en brouillon</button>
+                  </div>
+                  <div class="button-with-checkbox">
+                   
+                    <button class="btn-filtre-checkbox btn-filtre-base">Enregistrer en prévalidé </button>
+                  </div>
+                  <div class="button-with-checkbox">
+                 
+                    <button class="btn-filtre-checkbox btn-filtre-base">Valider le scénario </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <table class="simulations-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Element</th>
+              <th>Définition</th>
+              <th>2023 <br> Année N </th>
+              <th>2024 <br> Année N+1 </th>
+              <th>2025 <br> Année N+2 </th>
+              <th>2026 <br> Année N+3 </th>
+              <th>2027 <br> Année N+4 ​</th>
+              <th>2023-2027 <br> Moyenne / an </th>
+              <th >2023-2027 <br> Total 5 ans</th>
+ 
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+            <td rowspan="7" class="text-loyer">Loyer</td>
+           <td>Loyer quittancé </td>
+           <td>Total des loyers générés en tenant comptes des dates de début/fin de baux </td>
+           <td> 853 921 </td>
+           <td>791 689</td>
+           <td>997 215</td>
+           <td>1 017 160 </td>
+           <td>1 006 162</td>
+           <td>933 229</td>
+           <td>4 666 147</td>
+            </tr>
+            <tr>
+             
+             <td>Franchise </td>
+             <td>Franchise à déduire du loyer quittancé </td>
+             <td> 0 </td>
+             <td>-553 292</td>
+             <td>-180 250</td>
+             <td>0 </td>
+             <td>0</td>
+             <td>-146 708</td>
+             <td>-733 542</td>
+              </tr>
+
+              <tr>
+               
+               <td>Charges NR de la simulation </td>
+               <td>Indemnités des relocations en l'état, marketing, brokers, autres charges ... </td>
+               <td>  -4 650 </td>
+               <td>-153 495</td>
+               <td>0</td>
+               <td>0 </td>
+               <td>0</td>
+               <td>-31 629</td>
+               <td>-158 145 </td>
+                </tr>
+
+
+                <tr>
+                 
+                 <td>Charges NR récurrentes </td>
+                 <td>Travaux en parties privates > 400€/m² (valeur n-1 indexée) </td>
+                 <td>  -127 500 </td>
+                 <td>-130 050</td>
+                 <td>-132 651</td>
+                 <td>-135 304 </td>
+                 <td>-138010</td>
+                 <td>-132 703</td>
+                 <td>-663 515 </td>
+                  </tr>
+
+                  
+              <tr>
+               
+               <td>Charges NR PLSI </td>
+               <td>Travaux en parties communes > 5k€ en charges issus du plan de simulation </td>
+               <td> 0 </td>
+               <td>-10 000</td>
+               <td>0</td>
+               <td>-50 000 </td>
+               <td>-50 000</td>
+               <td>-22 000</td>
+               <td>-110 000 </td>
+                </tr>
+
+                
+              <tr>
+             
+               <td>Charges R restant à charge pour vacant  </td>
+               <td>Budget des charges récupérables (indexé) repris à hauteur du taux de vacance des parties tertiaires </td>
+               <td>-28 457 </td>
+               <td>-38 250</td>
+               <td>-13 282</td>
+               <td>-13 547</td>
+               <td>-17 273</td>
+               <td>-22 162</td>
+               <td>-110 809 </td>
+
+               <tr>
+               
+               <td>Total Loyer Net </td>
+               <td>Numérateur du taux de rendement</td>
+               <td>693 313 </td>
+               <td>-93 398</td>
+               <td>671 033</td>
+               <td>818 308</td>
+               <td>800 879</td>
+               <td>578 027</td>
+               <td>2 890 136 </td>
+                </tr>
+               
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <app-footer></app-footer>
+  </body>
+  

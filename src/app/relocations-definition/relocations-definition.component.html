@@ -14,9 +14,9 @@
             </div>
           </div>
           <div class="action-buttons">
-            <button class="btn-filtre btn-filtre-base" >Annuler la saisie</button>
-            <button class="btn-filtre btn-filtre-base" >Retour à l'étape 1</button>
-            <button class="btn-filtre btn-filtre-base" >Valider la saisie des relocations</button>
+            <button class="btn-filtre btn-filtre-base" (click)="goToRelocationDef()" >Annuler la saisie</button>
+            <button class="btn-filtre btn-filtre-base"  (click)="goToRelocationAffec()">Retour à l'étape 1</button>
+            <button class="btn-filtre btn-filtre-base"(click)="goToHypothese()" >Valider la saisie des relocations</button>
           </div>
         </div>
   

@@ -24,6 +24,7 @@ import { RegroupementLotTertiaireComponent } from './regroupement-lot-tertiaire/
 import { RelocationsAffectationComponent } from './relocations-affectation/relocations-affectation.component';
 import { RelocationsDefinitionComponent } from './relocations-definition/relocations-definition.component';
 import { ScinderLotTertiareComponent } from './scinder-lot-tertiare/scinder-lot-tertiare.component';
+import { SyntheseScenarioComponent } from './synthese-scenario/synthese-scenario.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { ScinderLotTertiareComponent } from './scinder-lot-tertiare/scinder-lot-
     RegroupementLotTertiaireComponent,
     RelocationsAffectationComponent,
     RelocationsDefinitionComponent,
-    ScinderLotTertiareComponent
+    ScinderLotTertiareComponent,
+    SyntheseScenarioComponent
 
   ],
   imports: [
@@ -57,7 +59,7 @@ import { ScinderLotTertiareComponent } from './scinder-lot-tertiare/scinder-lot-
     ReactiveFormsModule,
     RouterModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -39,14 +39,14 @@ button:hover{
     align-items: center;
     background-color: orange;
     padding: 10px;
-    width: 100%;
+   
   }
 
   .login-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 83vh;
     background-color: #f5f5f5;
   }
 

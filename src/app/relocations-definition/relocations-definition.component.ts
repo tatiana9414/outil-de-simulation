@@ -89,4 +89,16 @@ export class RelocationsDefinitionComponent {
     const year = date.getFullYear().toString().slice(-2);
     return `${day}/${month}/${year}`;
   }
+
+  goToRelocationAffec(){
+    this.router.navigate(['/relocations-affectation'])
+  }
+
+  goToRelocationDef(){
+    this.router.navigate(['/relocations-definition'])
+  }
+
+goToHypothese(){
+this.router.navigate(['/validation-hypotheses-calcul'])
+}
 }

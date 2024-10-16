@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+   
     margin: 0;
   }
   
@@ -12,7 +12,10 @@ body {
   }
   
   .Page {
-    flex: 1;
+ 
+    display: flex;
+    flex-direction: column;
+   
   }
   
   .header {
@@ -24,67 +27,12 @@ body {
     width: 100%;
   }
   
-  .icon {
-    background-color: transparent;
-    border: none;
-    margin-right: 0;
-    margin-left: 0;
-  }
+ 
   
-  .logo-section {
-    display: flex;
-    align-items: center;
-  }
   
-  .logo {
-    width: 60px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .title {
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    line-height: 1.2;
-    margin-left: 10px;
-  }
-  
-  .user-section {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-name {
-    font-size: 16px;
-    color: rgb(10, 10, 10);
-    margin-right: 10px;
-    text-align: right;
-  }
-  
-  .user-avatar {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .subtitle {
-    font-size: 30px;
-    margin: 20px 0;
-  }
-  
-  .author-img, .contributor-img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-  }
   
   .action-buttons {
     margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    margin-right: 2rem;
-    margin-bottom: 2rem;
   }
   
   .action-buttons button {
@@ -92,52 +40,50 @@ body {
     cursor: pointer;
   }
   
-  .relocation-table {
-    width: 95%;
-    margin: 0 auto; /* Centrer le tableau */
+  .simulations-table {
+  
     border-collapse: collapse;
+    margin: 0  /* Centrer le tableau */
   }
   
-  .relocation-table th, .relocation-table td {
-    padding: 0.5rem; /* Réduire la taille des marges */
-    font-size: 0.85rem; /* Réduire la taille de la police */
+  .simulations-table th, .simulations-table td {
+    border: 2px solid #fdfdfd;
+    padding: 8px;
   }
   
-  .relocation-table th {
+  .simulations-table th {
     background-color: #024272;
     color: white;
+    font-size: 11px;
   }
   
-  .relocation-table td {
+  .simulations-table td {
     text-align: center;
   }
   
-  .relocation-table input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
+
+
+  
+  .simulations-table tbody tr td:nth-child(n+1):nth-child(-n+4) {
+    background-color:  #f2f2f2;
+
+    font-size: 10px;
   }
   
-  .relocation-table button {
-    margin-right: 5px;
-    cursor: pointer;
+  .simulations-table tbody tr td:nth-child(n+5):nth-child(-n+12) {
+    background-color: white;
+    font-size: 10px;
+
+    
+
+
   }
-  
-  .relocation-table tbody tr td {
-    background-color: #d5deec;
-    column-width: auto;
-  }
-  
-  .mat-icon {
-    font-size: 24px;
-    background-color: transparent;
-    border: none;
-  }
-  
+
   .headerbas {
     display: flex;
     background-color: transparent;
     border: none;
-    width: 100%;
+  
   }
   
   .path-directory {
@@ -154,6 +100,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 2rem;
   }
   
   .inline-block {
@@ -170,12 +117,12 @@ body {
     width: 100%;
   }
   
-  .previous-step, .hypothesis-input, .next-step {
+  .previous-step, .hypothesis-input{
     border-radius: 1rem;
     background-color: rgb(245, 245, 245);
     padding: 0.5rem;
     text-align: center;
-    height: 8rem;
+    height: 9rem;
     margin-bottom: 1rem;
   }
   
@@ -211,12 +158,22 @@ body {
   .btn-filtre {
     height: 3rem;
     width: 10rem;
-    margin-top: 0.8rem;
+  margin-top:1.6rem
+  
   }
   
   .btn-filtre-checkbox {
     height: 3rem;
-    width: 5rem;
+    width: 10rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .description-text{
+    height: 5rem;
+    width:31.5rem;
+    border-radius: 10px;
+    border-color: transparent;
+    font-style: italic;
   }
   
   .btn-supp {
@@ -236,31 +193,22 @@ body {
     cursor: pointer;
   }
   
-  .search {
-    border-radius: 10px;
-    height: 45px;
-    width: 240px;
-    margin-left: 15px;
-    padding: 0 10px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  
-  .icon {
-    cursor: pointer;
-  }
-  
-  .Tableau {
-    cursor: pointer;
-  }
-  
-  /* Classe pour surligner en orange */
-  .relocation-table .highlight-orange {
+
+
+   /* Classe pour surligner en orange */
+   .simulations-table .highlight-orange {
     background-color: orange;
     color: white;
   }
   
-  .relocation-table .highlight-grey {
+  .simulations-table .highlight-grey {
     background-color: grey;
     color: white;
+  }
+  
+  .text-loyer {
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+   
   }

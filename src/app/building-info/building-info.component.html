@@ -1,30 +1,45 @@
-<div class="building-section">
+<div class="building-section" [ngClass]="{'synthese-scenario-height': isSyntheseScenarioPage}">
   <div class="building-name">[{{ buildingName }}]</div>
   <div class="building-data">
     <div class="logo-container">
       <img src="assets/Buildings.png" alt="Buildings">
       <p>{{ textBuildings }}</p>
       <!-- <p>Simulation :</p> -->
+      <div *ngIf="isSyntheseScenarioPage"  >
+        <p class="simulation">  Simulation :  </p>
+      </div>
     </div>
     <div class="logo-container">
       <img src="assets/Surface.png" alt="Surface">
       <p>{{ textSurface }}</p>
       <!-- <p>{{ textSurfaceSimulation }}</p> -->
+      <div *ngIf="isSyntheseScenarioPage"  >
+        <p class="simulation"> {{ textSurfaceSimulation }} </p>
+      </div>
     </div>
     <div class="logo-container">
       <img src="assets/ParkingPlaces.png" alt="ParkingPlaces">
       <p>{{ textParkingPlaces }}</p>
       <!-- <p>{{ textParkingPlacesSimulation }}</p> -->
+      <div *ngIf="isSyntheseScenarioPage"   >
+        <p class="simulation"> {{ textParkingPlacesSimulation }} </p>
+      </div>
     </div>
     <div class="logo-container">
       <img src="assets/Euros.png" alt="Euros">
       <p>{{ textEuros }}</p>
       <!-- <p>{{ textEurosSimulation }}</p> -->
+      <div *ngIf="isSyntheseScenarioPage"   >
+        <p class="simulation"> {{ textEurosSimulation }} </p>
+      </div>
     </div>
     <div class="logo-container">
       <img src="assets/PourcentageAug.png" alt="PourcentageAug">
       <p>{{ textPourcentageAug }}</p>
       <!-- <p>{{ textPourcentageAugSimulation }}</p> -->
+      <div *ngIf="isSyntheseScenarioPage"   >
+        <p class="simulation"> {{ textPourcentageAugSimulation}} </p>
+      </div>
     </div>
-  </div>
+
 </div>

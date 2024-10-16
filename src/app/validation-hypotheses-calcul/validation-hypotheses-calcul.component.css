@@ -15,7 +15,7 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Assure que le contenu prend tout l'espace disponible */
+ /* Assure que le contenu prend tout l'espace disponible */
 }
 
 .header {
@@ -92,19 +92,23 @@ body {
 }
 
 .simulations-table {
-  width: 95%;
+  width: 100%;
   border-collapse: collapse;
   margin: 0 auto; /* Centrer le tableau */
+  font-size: 12px;
 }
 
 .simulations-table th, .simulations-table td {
   border: 2px solid #fdfdfd;
   padding: 8px;
+  
+
 }
 
 .simulations-table th {
   background-color: #024272;
   color: white;
+
 }
 
 .simulations-table td {
@@ -123,7 +127,7 @@ body {
 
 .simulations-table tbody tr td:nth-child(n+1):nth-child(-n+9) {
   background-color: #d5deec;
-  column-width: auto;
+  column-width: auto; 
 }
 
 .simulations-table tbody tr td:nth-child(n+10):nth-child(-n+12) {
@@ -141,7 +145,7 @@ body {
   display: flex;
   background-color: transparent;
   border: none;
-  width: 95%;
+
 }
 
 .path-directory {

@@ -7,10 +7,13 @@
 <label for="immeuble-select"> Choix d'un immeuble :  </label>
 <select id="immeuble-select">
 <option value="" disabled selected>Liste déroulante : Immeuble d'un portefeuille</option> 
-<option value="immeuble1">Immeuble 1</option>      
-<option value="immeuble1">Immeuble 2</option>         
-<option value="immeuble1">Immeuble 3</option>         
-<option value="immeuble1">Immeuble 4</option> 
+<ul>
+    <li *ngFor="let paesi of paesiList">
+      
+        {{paesi.paesi_codext}}
+
+    </li>
+</ul>
 </select>
 <button class="validate-button" (click)="goToPage()"> Valider</button> 
 </div>

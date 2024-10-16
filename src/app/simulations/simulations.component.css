@@ -24,7 +24,7 @@
 
 
 .simulations-table {
-  margin-left: 0rem;
+  margin-left: 3rem;
   margin-right: 3rem;
   border-collapse: collapse;
   
@@ -32,7 +32,7 @@
 
 .simulations-table th, .simulations-table td {
   border: 2px solid #fdfdfd;
-  padding: 8px;
+ 
 }
 
 .simulations-table th {
@@ -67,9 +67,9 @@
 }
 
 .mat-icon{
-  font-size: 24px;
+  
   background-color: transparent;
-  border: none;
+  border: transparent;
 
 
 }
@@ -78,7 +78,7 @@
   display: flex;
   background-color: transparent;
   border: none;
-  width: 95rem;
+
 }
 
 .inline-block2 button {
@@ -161,12 +161,18 @@
 
   
 }
-.img-btn{
-  width: 23px;
-  margin-right:2px;
-  margin-top: 5px;
 
+.icon {
+  cursor: pointer;
 }
+.Tableau{
+  cursor:pointer;
+}
+
+
+
+
+
 
 
 .btn-filtre  {
@@ -184,26 +190,46 @@ cursor: pointer;
 
 }
 
-.btn-search{
-height: 45px;
-border-radius: 10px;
-cursor: pointer;
+.img-btn{
+  width: 23px;
+  margin-right:2px;
+  margin-top: 5px;
 
 }
-.search{
+
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  
+  width: 250px;
+  background-color: white;
+  margin-left:1rem;
+  margin-right: 3rem;
+}
+.search-box input[type="text"] {
   border-radius: 10px;
   height: 45px;
   width: 240px;
   margin-left: 15px;
   padding: 0 10 px;
   box-sizing: border-box;
-
+border: transparent;
   text-align: center;
+  flex-grow: 1;
 }
-
-.icon {
+.search-box button {
+  background: none;
+  border: transparent;
   cursor: pointer;
 }
-.Tableau{
-  cursor:pointer;
+.search-box img {
+  
+    width: 23px;
+    margin-right:2px;
+    margin-top: 5px;
+  
 }

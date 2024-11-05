@@ -7,7 +7,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
-import { SimulationsComponents } from './simulations/simulations.component';
+import { SimulationsComponent} from './simulations/simulations.component';
 import { MatCardModule } from '@angular/material/card';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
@@ -30,8 +30,8 @@ import { SyntheseScenarioComponent } from './synthese-scenario/synthese-scenario
 @NgModule({
   declarations: [
     AppComponent,
-    SimulationsComponents,
-    
+    SimulationsComponent,
+  
     LoginComponent,
     HeaderComponent,
     FooterComponent,

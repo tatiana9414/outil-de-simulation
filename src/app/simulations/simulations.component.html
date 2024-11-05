@@ -1,122 +1,75 @@
-
 <div class="container">
-
   <app-header></app-header>
-
-
   <div class="Page">
-    <!-- Sous-titre -->
-    <h2 class="subtitle" >Les simulations d'Amandine</h2>
-  
-    <!-- Boutons d'action -->
-   
- <div class="headerbas">
-    <div class="inline-block1">
-
-      
-      <button><img src="assets/Share.png" class="img-btn">Partager </button>
-      <button><img src="assets/Export.png" class="img-btn">Exporter</button>
-      <button><img src="assets/delete.png" class="img-btn">Supprimer</button>
-      
-    </div>
- 
-    <!-- Filtres -->
+    <h2 class="subtitle">Les simulations d'Amandine</h2>
+    <div class="headerbas">
+      <div class="inline-block1">
+        <button><img src="assets/Share.png" class="img-btn">Partager</button>
+        <button><img src="assets/Export.png" class="img-btn">Exporter</button>
+        <button><img src="assets/delete.png" class="img-btn">Supprimer</button>
+      </div>
       <div class="inline-block2">
-        <thead><h3 class="Filtres">Filtres Pratiques</h3></thead>
-       <div class="filter-container">
-        <button class="btn-filtre" >Période <br>en cours</button>
-        <button class="btn-filtre">Scénarios <br> validés</button>
-        <button class="btn-filtre">Brouillons</button>
-        <button class="btn-filtre">Partagéés <br> avec moi </button>
-        <button class="btn-filtre">Scénario <br> à valider</button>
-       <div class="search-box">
-      <input type="text" placeholder="Barre de recherche par mot clé" class="search" >
-      <button class="btn-search"><img src="assets/loop.png" class="img-btn"></button>
-    </div> 
-  </div>
-
+        <h3 class="Filtres">Filtres Pratiques</h3>
+        <div class="filter-container">
+          <button class="btn-filtre">Période <br>en cours</button>
+          <button class="btn-filtre">Scénarios <br> validés</button>
+          <button class="btn-filtre">Brouillons</button>
+          <button class="btn-filtre">Partagéés <br> avec moi</button>
+          <button class="btn-filtre">Scénario <br> à valider</button>
+          <div class="search-box">
+            <input type="text" placeholder="Barre de recherche par mot clé" class="search">
+            <button class="btn-search"><img src="assets/loop.png" class="img-btn"></button>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Tableau -->
-    <table class="simulations-table">
-      <thead>
-        <tr>
-          <th>Sélection</th>
-          <th>Scénario</th>
-          <th>Période <br> simulée</th>
-          <th>Type</th>
-          <th>Périmètre</th>
-          <th>Auteur</th>
-          <th>Contributeurs</th>
-          <th>Dernière <br>modif.</th>
-          <th>Rdtm <br>simulé <br> (5ème année)</th>
-          <th>Statut</th>
-          <th>Commentaire</th>
-          <th>Actions</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>CT_Amsterdam</td>
-          <td>2023-2027</td>
-          <td>Com. Tertiaire</td>
-          <td>Amsterdam</td>
-          <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
-          <td><img src="assets/contributor1.png" alt="Contributeur" class="contributor-img"></td>
-          <td>Hier 18:10</td>
-          <td>2.56%</td>
-          <td>Pré-validé</td>
-          <td>Commentaire libre</td>
-          <td>
-            <button class="mat-icon"><img src="assets/Edit.png"  class="img-btn"></button>
-            <button class="mat-icon"><img src="assets/Look.png" class="img-btn"></button>
-            <button class="mat-icon"><img src="assets/Share.png" class="img-btn"></button>
-         
-          </td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>CT_Amsterdam</td>
-          <td>2023-2027</td>
-          <td>Com. Tertiaire</td>
-          <td>Amsterdam</td>
-          <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
-          <td></td>
-          <td>24/06/2024 16:30</td>
-          <td>2.60%</td>
-          <td>Brouillon</td>
-          <td>Commentaire libre</td>
-          <td>
-            <button class="mat-icon"><img src="assets/Edit.png" class="img-btn"></button>
-            <button class="mat-icon"><img src="assets/Look.png" class="img-btn"></button>
-            <button class="mat-icon"><img src="assets/Share.png" class="img-btn"></button>
-          </td>
-        </tr>
-        <tr>
-          <td><input type="checkbox"></td>
-          <td>P_Planete</td>
-          <td>2023-2027</td>
-          <td>Patrimoine</td>
-          <td>Planete A </td>
-          <td><img src="assets/user1.png" alt="Auteur" class="author-img"></td>
-          <td></td>
-          <td>05/06/2024 10:22</td>
-          <td>4,55%</td>
-          <td>Brouillon</td>
-          <td>Commentaire libre</td>
-          <td>
-            <button class="mat-icon"><img src="assets/Edit.png"  class="img-btn"></button>
-            <button class="mat-icon"><img src="assets/Look.png"class="img-btn"></button>
-            <button class="mat-icon"><img src="assets/Share.png"class="img-btn"></button>
-          </td>
-        </tr>
-
-      </tbody>
-    </table>
+    <div class="container">
+      <table class="simulations-table">
+        <thead>
+          <tr>
+            <th>Sélection</th>
+            <th>Scénario</th>
+            <th>Période simulée</th>
+            <th>Type</th>
+            <th>Périmètre</th>
+            <th>Auteur</th>
+            <th>Contributeurs</th>
+            <th>Dernière modif.</th>
+            <th>Rdtm simulé (5ème année)</th>
+            <th (click)="toggleFilter()">Statut</th>
+            <th>Commentaire</th>
+            <th>Actions</th>
+          </tr>
+          <tr *ngIf="showFilter">
+            <td colspan="9"></td>
+            <td>
+              <input type="text" placeholder="Rechercher" [(ngModel)]="searchTerm" (input)="filterTable()" class="search-small">
+            </td>
+            <td colspan="2"></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let simulation of filteredSimulations">
+            <td><input type="checkbox"></td>
+            <td>{{simulation.scenario}}</td>
+            <td>{{simulation.periodeSimulee}}</td>
+            <td>{{simulation.type}}</td>
+            <td>{{simulation.perimetre}}</td>
+            <td><img [src]="simulation.auteurImg" alt="Auteur" class="author-img"></td>
+            <td><img [src]="simulation.contributeurImg" alt="Contributeur" class="contributor-img" *ngIf="simulation.contributeurImg"></td>
+            <td>{{simulation.derniermodif}}</td>
+            <td>{{simulation.rendementSimule}}</td>
+            <td>{{simulation.statut}}</td>
+            <td>{{simulation.commentaire}}</td>
+            <td>
+              <button class="mat-icon"><img src="assets/Edit.png" class="img-btn"></button>
+              <button class="mat-icon"><img src="assets/Look.png" class="img-btn"></button>
+              <button class="mat-icon"><img src="assets/Share.png" class="img-btn"></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <app-footer></app-footer>
   </div>
-
-  <app-footer></app-footer>
 </div>
-  

@@ -22,8 +22,8 @@ const routes: Routes = [
   { path: 'relocations-affectation', component: RelocationsAffectationComponent },
   { path: 'relocations-definition', component: RelocationsDefinitionComponent },
   {path:'scinder-lot-tertiaire',component:ScinderLotTertiareComponent},
-  {path:'synthese-scenario',component:SyntheseScenarioComponent},
-  
+    {path: 'synthese-scenario', component: SyntheseScenarioComponent},
+
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: '**', redirectTo: '/login' }
 ];

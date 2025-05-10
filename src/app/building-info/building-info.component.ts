@@ -1,4 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { UrlSegment } from '@angular/router';
+import { Route } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-building-info',
@@ -17,8 +20,18 @@ export class BuildingInfoComponent implements OnInit {
   @Input() textParkingPlacesSimulation!: string;
   @Input() textEurosSimulation!: string;
   @Input() textPourcentageAugSimulation!: string;
+  isSyntheseScenarioPage:boolean=false;
 
+
+  constructor(private route: ActivatedRoute) {}
   ngOnInit() {
+    this.route.url.subscribe(url=>{
+      this.isSyntheseScenarioPage=url.some( segment=>segment.path==='synthese-scenario')
+    }
+
+    )
+
+    
     this.textBuildings = this.formatNumber(this.generateRandomNumber(5000000, 100000000));
     this.textSurface = `${this.formatNumber(this.generateRandomNumber(500, 3000))} m²`;
     this.textParkingPlaces = `${this.generateRandomNumber(5, 100)} places`;

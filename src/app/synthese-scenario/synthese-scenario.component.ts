@@ -23,14 +23,15 @@ export interface HypothesesData {
   input_check: boolean;
 }
 
+
 @Component({
-  selector: 'app-validation-hypotheses-calcul',
-  templateUrl: './validation-hypotheses-calcul.component.html',
-  styleUrls: ['./validation-hypotheses-calcul.component.css']
+  selector: 'app-synthese-scenario',
+  templateUrl: './synthese-scenario.component.html',
+  styleUrl: './synthese-scenario.component.css'
 })
-export class ValidationHypothesesCalculComponent {
-  pathsDirectory: string = 'Stratégie Commerciale Tertiaire > Façonnage des lots >​ ';
-  actualDirectory: string = 'Hypothèses de simulation';
+export class SyntheseScenarioComponent {
+  pathsDirectory: string = 'Stratégie Commerciale Tertiaire > Façonnage des lots > Hypothèses de simulation >​ ';
+  actualDirectory: string = 'Synthèse du scénario';
 
   constructor(private router: Router) {}
 
@@ -94,3 +95,5 @@ export class ValidationHypothesesCalculComponent {
     return `${part1}-${part2}${part3}${part4}`;
   }
 }
+
+

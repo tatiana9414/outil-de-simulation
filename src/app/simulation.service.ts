@@ -1,26 +1,21 @@
 import { Injectable } from '@angular/core';
 import { Observable, of} from 'rxjs';
-import { simulation } from './simulations/simulations.component';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SimulationService {
 
-  constructor() { }
+ private apiUrl='http://localhost:3000/api/paesi';
+  constructor(private http:HttpClient) {}
 
-  getSimulations():Observable<simulation[]> {
-    const dummyData: simulation[]= [
-      {scenario:'CT_Amsterdam',periodeSimulee:'2023-2027' ,type:'Com.Tertiaire',perimetre:'Amsterdam',
-        derniermodif:'Hier 16h30', statut:'Pré-validé',rendementSimule:'2,56'
-      },
-      {scenario:'P_Amsterdam',periodeSimulee:'2023-2027' ,type:'Com.Tertiaire',perimetre:'Amsterdam',
-        derniermodif:'24/06/2024 16h30',statut:'Brouillon',rendementSimule:'2,56'
-      }
-
-    ];
-    return of(dummyData);
-
-
+  getPaesi():Observable<any[]>{
+    console.log('Appel de getPaesi()');
+    return this.http.get<any[]>(this.apiUrl);
   }
+
+  
 }
+
+

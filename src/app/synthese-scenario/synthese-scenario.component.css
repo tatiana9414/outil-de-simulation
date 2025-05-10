@@ -1,0 +1,214 @@
+body {
+    display: flex;
+    flex-direction: column;
+   
+    margin: 0;
+  }
+  
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Page {
+ 
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+    padding: 10px;
+    width: 100%;
+  }
+  
+ 
+  
+  
+  
+  .action-buttons {
+    margin-bottom: 10px;
+  }
+  
+  .action-buttons button {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .simulations-table {
+  
+    border-collapse: collapse;
+    margin: 0  /* Centrer le tableau */
+  }
+  
+  .simulations-table th, .simulations-table td {
+    border: 2px solid #fdfdfd;
+    padding: 8px;
+  }
+  
+  .simulations-table th {
+    background-color: #024272;
+    color: white;
+    font-size: 11px;
+  }
+  
+  .simulations-table td {
+    text-align: center;
+  }
+  
+
+
+  
+  .simulations-table tbody tr td:nth-child(n+1):nth-child(-n+4) {
+    background-color:  #f2f2f2;
+
+    font-size: 10px;
+  }
+  
+  .simulations-table tbody tr td:nth-child(n+5):nth-child(-n+12) {
+    background-color: white;
+    font-size: 10px;
+
+    
+
+
+  }
+
+  .headerbas {
+    display: flex;
+    background-color: transparent;
+    border: none;
+  
+  }
+  
+  .path-directory {
+    font-size: 0.8rem;
+  }
+  
+  .highlight {
+    font-size: 2rem;
+  }
+  
+  /* --------------- BOARD MANAGEMENT --------------- */
+  
+  .board-management {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  
+  .inline-block {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .filter-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .previous-step, .hypothesis-input{
+    border-radius: 1rem;
+    background-color: rgb(245, 245, 245);
+    padding: 0.5rem;
+    text-align: center;
+    height: 9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hypothesis-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+  }
+  
+  .button-with-checkbox-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -1rem;
+  }
+  
+  .button-with-checkbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  
+  .btn-filtre-base {
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .btn-filtre {
+    height: 3rem;
+    width: 10rem;
+  margin-top:1.6rem
+  
+  }
+  
+  .btn-filtre-checkbox {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .description-text{
+    height: 5rem;
+    width:31.5rem;
+    border-radius: 10px;
+    border-color: transparent;
+    font-style: italic;
+  }
+  
+  .btn-supp {
+    margin-right: 2px;
+    cursor: pointer;
+  }
+  
+  .img-btn {
+    width: 23px;
+    margin-right: 2px;
+    margin-top: 5px;
+  }
+  
+  .btn-search {
+    height: 45px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+
+
+   /* Classe pour surligner en orange */
+   .simulations-table .highlight-orange {
+    background-color: orange;
+    color: white;
+  }
+  
+  .simulations-table .highlight-grey {
+    background-color: grey;
+    color: white;
+  }
+  
+  .text-loyer {
+
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+   
+  }

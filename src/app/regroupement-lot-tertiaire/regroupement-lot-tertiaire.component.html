@@ -1,14 +1,14 @@
 <app-header> </app-header>
 
-    
 <!-- Boutons d'action -->
 <div class="board-management">
   <h2 class="highlight">Selectionner les lots à regrouper </h2>
- <button  class="btn-filtre btn-filtre-base"(click)="OnPageInit()">Valider le regroupement </button>
+ <button  class="btn-filtre btn-filtre-base" (click)="OnPageInit()">Valider le regroupement </button>
 </div>
 
 <div class="page">
-  <table class="simulations-table">
+
+  <table class="simulations-table">   <!-- tableau -->
     <thead>
       <tr>
         <th>Locataire</th>
@@ -28,7 +28,7 @@
         <th>Loyer Global (€) </th>
         <th>Sélection des lots </th>
         <th>Nb Parking à capter</th>
-        
+
       </tr>
     </thead>
     <tbody>
@@ -37,7 +37,7 @@
           <td>
             <span  class="sousLocataire" *ngIf="item.nb_lots >1" (click)="toggleSousLignes(item)" >
             {{item.showDetails ? '-':'+'}}
-            </span> {{item.locataire}}</td> 
+            </span> {{item.locataire}}</td>
           <td>{{item.numero_bail}}</td>
           <td>{{item.nb_lots}}</td>
           <td>{{item.num_lot}}</td>
@@ -53,10 +53,10 @@
           <td>{{item.loyer_parkin}}</td>
           <td>{{item.loyer_global}}</td>
           <td><input type="checkbox" id="checkbox2">
-            <label for="checkbox2"></label></td>
+            <label for="checkbox2"> A </label></td>
           <td></td>
-        
-         
+
+
         </tr >
       <ng-container *ngIf="item.showDetails" class="locataire-row">
         <tr  *ngFor="let subItem of item.subData" class="color-back">
@@ -76,8 +76,8 @@
           <td>{{subItem.sousloyer_parkinh}}</td>
           <td>{{subItem.sousloyer_global}}</td>
           <td ><input type="checkbox" id="checkbox2">
-            <label for="checkbox2"></label></td>
-       
+            <label for="checkbox2"> A</label></td>
+
 
 
           <td colspan="11"></td>

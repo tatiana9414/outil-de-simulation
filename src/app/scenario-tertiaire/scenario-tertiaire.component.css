@@ -39,3 +39,62 @@ button.validate-button:hover{
     background-color: #0056b3;
 }
 
+.custom-select {
+    position: relative;
+    width: 30rem;
+  }
+  
+  .selected-option {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .options-list {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    border-radius: 10px;
+  }
+  
+  .options-list.show {
+    display: block;
+  }
+  
+  .options-list li {
+    padding: 3px;
+    cursor: pointer;
+    font-size: 12px;
+  }
+  
+  .options-list li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .pagination-buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px;
+  }
+  
+  .pagination-buttons button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size:12px;
+  }
+  
+  .pagination-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
